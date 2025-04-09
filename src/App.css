@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+	--font-grotesk: "Hanken Grotesk", sans-serif;
+}
+
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+	background-color: white;
+	@apply font-grotesk;
+}
+
+body {
+	@apply bg-white text-black;
+}
+
+.sign-up-section {
+	@apply mb-4 text-left w-full;
+}
+
+.sign-up-label {
+	@apply text-lg font-medium w-full;
+}
+
+.sign-up-input {
+	@apply w-full max-w-md p-4 border border-purple-400 rounded-md bg-purple-100;
+}
+.sign-up-input:focus {
+	@apply border-purple-600 border-2 outline-0;
+}
+
+.sign-up-button {
+	@apply max-w-md px-4 bg-purple-500 text-white rounded-md hover:bg-purple-700 transition-colors duration-300;
+}
+
+.error {
+	@apply bg-red-300/20 border-red-500;
+}
+
+.error-text {
+	@apply text-red-500 bg-red-100/50 p-2 rounded-md text-sm m-2;
+}
